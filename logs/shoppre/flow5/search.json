@@ -1,0 +1,66 @@
+{
+  "context": {
+    "domain": "ONDC:RET12",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "search",
+    "version": "2.0.2",
+    "bap_id": "preprod-ondc.inditrunk.com",
+    "bap_uri": "https://preprod-ondc.inditrunk.com/app",
+    "transaction_id": "t8fe79195-6d8f-4b96-9316-5c9dfff2af3b",
+    "message_id": "m3df9c279-fac8-4a94-9e21-7c2ccc2d3585",
+    "timestamp": "2024-11-25T11:43:12.373Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "iodex"
+        }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "stops": [
+          {
+            "type": "end",
+            "location": {
+              "gps": "55.68031355,21.1543301",
+              "area_code": "93207"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "PRE-FULFILLMENT"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "bap_terms"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "finder_fee_type"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "finder_fee_amount"
+              },
+              "value": "3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
